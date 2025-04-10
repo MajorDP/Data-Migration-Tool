@@ -1,0 +1,19 @@
+@import "tailwindcss";
+/* Color Scheme:
+
+Primary	#3B82F6 
+Primary Dark	#1D4ED8 
+Accent	#10B981
+Error	#EF4444 
+Warning	#F59E0B 
+Background	#F9FAFB 
+Card BG	#FFFFFF	
+Text Primary	#111827 
+Text Secondary #7e7e7e 
+Border / Dividers	#E5E7EB 
+*/
+
+body {
+  height: 100vh;
+  background-color: #f9fafb;
+}
