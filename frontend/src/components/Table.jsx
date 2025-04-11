@@ -10,7 +10,7 @@ function Table({ table, handleSelect }) {
 
   const handleGetColumnData = async (tableName) => {
     setIsLoading(true);
-    //TODO: Get column names of chosen table
+
     const { data, error } = await getTableColumnNames(tableName);
 
     if (data) {
@@ -31,7 +31,7 @@ function Table({ table, handleSelect }) {
               className="w-4 h-4"
               onChange={(e) => handleSelect(e.target.checked, table.tableName)}
             />
-            {/* table names and count of rows */}
+
             <p className="text-[#6B7280] font-semibold">{table.tableName}</p>
             <p className="text-[#6B7280] text-sm">{table.rowCount} rows</p>
           </span>
@@ -59,7 +59,6 @@ function Table({ table, handleSelect }) {
         )}
       </div>
 
-      {/* display names of tables' columns from source database here */}
       {isOpen && isLoading && <p>Loading...</p>}
       {isOpen && error && <p>{error}</p>}
       {isOpen && tableColumnData && (

@@ -52,7 +52,12 @@ function MigrationPanel({ sourceDBData }) {
   };
   return (
     <div className="flex flex-col items-center">
-      <DBForm type="Target" handleSubmit={handleConnectTarget} />
+      {isConnected && (
+        <p className="text-[#7e7e7e]">Source and target databases connected.</p>
+      )}
+      {!isConnected && (
+        <DBForm type="Target" handleSubmit={handleConnectTarget} />
+      )}
       <TableData dbData={sourceDBData} handleSelect={handleSelect} />
       {error && (
         <p className="text-center text-red-500 font-semibold">{error}</p>

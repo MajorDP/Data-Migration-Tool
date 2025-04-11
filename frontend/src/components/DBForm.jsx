@@ -6,7 +6,7 @@ function DBForm({ type, handleSubmit }) {
   const [formData, setFormData] = useState({
     dbType: "MySQL",
     host: "localhost",
-    port: "3000",
+    port: "3306",
     dbName: "datamig",
     dbUsername: "root",
     dbPassword: "123123",
