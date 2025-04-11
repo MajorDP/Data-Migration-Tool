@@ -81,6 +81,18 @@ created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 ```
 
+Example data insertion inside source_db:
+
+```bash
+INSERT INTO users (name, email, password)
+VALUES
+  ('Alice Johnson', 'alice@example.com', 'hashed_password_1'),
+  ('Bob Smith', 'bob@example.com', 'hashed_password_2'),
+  ('Charlie Rose', 'charlie@example.com', 'hashed_password_3'),
+  ('Dana Lee', 'dana@example.com', 'hashed_password_4'),
+  ('Evan Garcia', 'evan@example.com', 'hashed_password_5');
+```
+
 4. **Run the development server**:
    Start the development server with:
 
