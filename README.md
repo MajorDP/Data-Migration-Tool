@@ -1,4 +1,4 @@
-# 🛠️ Data Migration App (Mock Backend)
+# 🛠️ Data Migration App
 
 This is a skeleton implementation of a **React + Node.js** data migration tool, designed to connect to a source database, inspect its schema, and migrate selected table data to a target database. This version uses **mock data** to simulate the process and establish the full flow.
 
